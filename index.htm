@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test.drawy</title>
+    <script type="text/javascript" src="drawy.1.js"></script>
+    <link rel="stylesheet" href="drawy.css" />
+    <style type="text/css">
+        #drawy_content {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="drawy_content"></div>
+</body>
+<script>
+    Drawy('drawy_content', {
+        theme: 'dark',
+        template: [
+            {
+                'BTS': {
+                    'id': 'x1',
+                    'name': 'BTS_1'
+                }
+            },
+            {
+                'SWITCH': {
+                    'ID': 'x2',
+                    'name': 'ELE1'
+                }
+            },
+            {
+                'BTS': {
+                    'ID': 'x3',
+                    'name': 'test2'
+                }
+            },
+            {
+                'BTS': {
+                    'ID': 'x5',
+                    'name': 'test2'
+                }
+            },
+            {
+                'BTS': {
+                    'ID': 'x6',
+                    'name': 'test2'
+                }
+            },
+            {
+                'SWITCH': {
+                    'ID': 'x4',
+                    'name': 'test2'
+                }
+            }, {
+                'BTS': {
+                    'ID': 'X7',
+                    'name': 'rel'
+                }
+            }
+        ],
+        LINK: [{
+            'from': 'x1',
+            'to': 'x3'
+        },
+        {
+            'from': 'x2',
+            'to': 'x4'
+        }, {
+            'from': 'x1',
+            'to': 'x6'
+        }, {
+            'from': 'x4',
+            'to': 'x5'
+        }, {
+            'from': 'x4',
+            'to': 'x6'
+        }, {
+            'from': 'X7',
+            'to': 'x4'
+        }
+        ]
+    });
+</script>
+
+</html>

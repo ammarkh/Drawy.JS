@@ -1,0 +1,29 @@
+.dark,
+.DARK,
+.Dark {
+  background-color: rgb(63, 61, 61);
+  color: white;
+  font: arial;
+  border: 4px solid rgb(24, 23, 23);
+  border-radius: 5px;
+}
+
+.light,
+.LIGHT,
+.Light {
+  background-color: rgba(230, 230, 200);
+  color: black;
+  font: arial;
+  border: 4px solid rgb(142, 110, 255);
+  border-radius: 5px;
+}
+
+.BLUY,
+.Bluy,
+.bluy {
+  border: 4px solid rgb(29, 125, 214);
+  color: blue;
+  font: arial;
+  background-color: rgb(59, 40, 131);
+  border-radius: 5px;
+}

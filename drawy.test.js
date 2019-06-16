@@ -3,6 +3,7 @@
  * this is a drawy library.
  * for more information, or of you want to become supporter,
  *  for developement drawy please contact a.m.k-it@hotmail.com
+ * this document represent new version from features added to library under to test.
  */
 
 /**
@@ -201,6 +202,8 @@ const NETWORK_ELEMENT_ID_EXCEPTION =
 
 var NET_ELEMENT = [];
 var NET_LINK = [];
+var NET_BTS = [];
+var NET_ANTENNA = [];
 
 var Drawy = function(elem = "", options = {}) {
   if (typeof elem == "string") {
